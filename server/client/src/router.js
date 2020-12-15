@@ -12,6 +12,6 @@ export default new Router({
       path: '/ping',
       name: 'Ping',
       component: Ping,
-    }
+    },
   ],
 });
