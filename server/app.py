@@ -55,5 +55,26 @@ def all_books():
         response_object['books'] = BOOKS
     return jsonify(response_object)
 
+def single_book(book_id):
+    response_object = {'status': 'success'}
+    if request.method == 'PUT':
+        post_data = request.get_json()
+        remove_book(book_id)
+        BOOKS.append({
+            'id': uuid.uuid4().hex,
+            'title': post_data.get('title'),
+            'author': post_data.get('author'),
+            'read': post_data.get('read')
+        })
+        response_object['message'] = 'Book updated!'
+    return jsonify(response_object)
+
+def remove_book(book_id):
+    for book in BOOKS:
+        if book['id'] == book_id:
+            BOOKS.remove(book)
+            return True
+    return False
+
 if __name__ == '__main__':
     app.run()
