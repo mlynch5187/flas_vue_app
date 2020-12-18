@@ -14,9 +14,9 @@ the Sinatra microservice with Ruby on Rails. Vue is also completely new to me.
 
 ### Dependencies Used
 
-Vue v2.6.10
-Vue CLI v3.7.0
-Node v12.1.0
-npm v6.9.0
-Flask v1.0.2
-Python v3.7.3
+<p>Vue v2.6.10</p>
+<p>Vue CLI v3.7.0</p>
+<p>Node v12.1.0</p>
+npm v6.9.0</p>
+<p>Flask v1.0.2</p>
+<p>Python v3.7.3</p>
