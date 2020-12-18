@@ -147,6 +147,10 @@ export default {
       this.addBookForm.title = '';
       this.addBookForm.author = '';
       this.addBookForm.read = [];
+      this.editForm.id = '';
+      this.editForm.title = '';
+      this.editForm.author = '';
+      this.editForm.read = [];
     },
     onSubmit(evt) {
       evt.preventDefault();
