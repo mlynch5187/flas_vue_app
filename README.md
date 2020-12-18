@@ -20,3 +20,4 @@ the Sinatra microservice with Ruby on Rails. Vue is also completely new to me.
 npm v6.9.0</p>
 <p>Flask v1.0.2</p>
 <p>Python v3.7.3</p>
+<p>Bootstrap 4.3.1</p>
