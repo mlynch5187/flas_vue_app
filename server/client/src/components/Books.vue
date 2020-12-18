@@ -173,6 +173,12 @@ export default {
       };
       this.updateBook(payload, this.editForm.id);
     },
+    onResetUpdate(evt) {
+      evt.preventDefault();
+      this.$refs.editBookModal.hide();
+      this.initForm();
+      this.getBooks(); // why?
+    },
     onReset(evt) {
       evt.preventDefault();
       this.$refs.addBookModal.hide();
